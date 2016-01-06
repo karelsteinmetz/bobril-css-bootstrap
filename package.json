@@ -1,0 +1,30 @@
+{
+  "name": "bobril-css-bootstrap",
+  "version": "0.0.1",
+  "description": "CSS-Bootstrap in Bobril components",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karelsteinmetz/bobril-css-bootstrap.git"
+  },
+  "keywords": [
+  ],
+  "author": {
+    "name": "Karel Steinmetz",
+    "email": "karel.steinmetz@gmail.com"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "dependencies": {
+      "bobril": "*"
+  },
+  "devDependencies": {
+    "bobril-build": "*",
+    "graceful-fs": "^4.1.2",
+    "gulp": "^3.9.0",
+    "jasmine": "*",
+    "through2": "^2.0.0"
+  },
+  "license": "MIT"
+}
