@@ -1,0 +1,39 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "target": "es6",
+        "declaration": true,
+        "noImplicitAny": false,
+        "removeComments": false,
+        "moduleResolution": "node",
+        "noLib": false
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./tmp/**/*.ts",
+        "!./typed/**/*",
+        "!./node_modules/**/*",
+        "!./**/*.d.ts",
+        "!./dist/**/*",
+        "!./tests/**/*"
+    ],
+    "files": [
+        "./index.ts",
+        "./src/button.ts",
+        "./src/checkbox.ts",
+        "./src/container.ts",
+        "./src/contextualState.ts",
+        "./src/formField.ts",
+        "./src/formGroup.ts",
+        "./src/inlineForm.ts",
+        "./src/input.ts",
+        "./src/layout.ts",
+        "./src/navBar.ts",
+        "./src/panel.ts",
+        "./src/radio.ts",
+        "./src/select.ts",
+        "./src/table.ts",
+        "./src/text.ts",
+        "./src/toggleButton.ts"
+    ]
+}
