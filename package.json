@@ -20,11 +20,7 @@
       "bobril": "*"
   },
   "devDependencies": {
-    "bobril-build": "*",
-    "graceful-fs": "^4.1.2",
-    "gulp": "^3.9.0",
-    "jasmine": "*",
-    "through2": "^2.0.0"
+    "bobril-build": "*"
   },
   "license": "MIT"
 }
