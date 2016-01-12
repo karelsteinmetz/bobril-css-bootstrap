@@ -8,7 +8,7 @@ export enum ValidationState {
 }
 
 export interface IData {
-    content: b.IBobrilNode,
+    content: b.IBobrilChildren,
     help?: string,
     validationState?: ValidationState
 }

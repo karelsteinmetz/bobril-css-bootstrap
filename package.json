@@ -1,26 +1,32 @@
 {
-  "name": "bobril-css-bootstrap",
-  "version": "0.0.2",
-  "description": "CSS-Bootstrap in Bobril components",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/karelsteinmetz/bobril-css-bootstrap.git"
-  },
-  "keywords": [
-  ],
-  "author": {
-    "name": "Karel Steinmetz",
-    "email": "karel.steinmetz@gmail.com"
-  },
-  "scripts": {
-    "test": "jasmine"
-  },
-  "dependencies": {
-      "bobril": "*"
-  },
-  "devDependencies": {
-    "bobril-build": "*"
-  },
-  "license": "MIT"
+    "name": "bobril-css-bootstrap",
+    "version": "0.0.2",
+    "description": "CSS-Bootstrap in Bobril components",
+    "main": "./index.js",
+    "typescript": {
+        "main": "./index.ts"
+    },
+    "bobril": {
+        "example": "examples/index.ts",
+        "title": "CSSB Title"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/karelsteinmetz/bobril-css-bootstrap.git"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Karel Steinmetz",
+        "email": "karel.steinmetz@gmail.com"
+    },
+    "scripts": {
+        "test": "jasmine"
+    },
+    "dependencies": {
+        "bobril": "*"
+    },
+    "devDependencies": {
+        "bobril-build": "*"
+    },
+    "license": "MIT"
 }

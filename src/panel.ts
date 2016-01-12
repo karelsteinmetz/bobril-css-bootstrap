@@ -2,9 +2,9 @@ import * as b from 'bobril';
 import * as cs from './contextualState';
 
 export interface IData {
-  header?: b.IBobrilNode
-  content: b.IBobrilNode
-  footer?: b.IBobrilNode
+  header?: b.IBobrilChildren 
+  content: b.IBobrilChildren
+  footer?: b.IBobrilChildren
   contextualState?: cs.ContextualState
 }
 

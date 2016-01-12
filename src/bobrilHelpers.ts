@@ -1,11 +1,19 @@
 import * as b from 'bobril';
 
 export function styledDiv(children: b.IBobrilChildren, className: string): b.IBobrilNode {
-    return b.style({ tag: 'div', children, className: className }, {});
+    return b.style({ tag: 'div', children, className }, {});
+}
+
+export function styledUl(content: b.IBobrilChildren, className: string): b.IBobrilChildren {
+    return {
+        tag: 'ul',
+        className: className,
+        children: content
+    };
 }
 
 export interface ILiData {
-  content: b.IBobrilNode
+  content: b.IBobrilChildren
   isActive?: boolean
   isDisabled?: boolean
   onClick?: () => void
