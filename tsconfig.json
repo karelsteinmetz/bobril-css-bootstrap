@@ -18,6 +18,7 @@
         "!./tests/**/*"
     ],
     "files": [
+        "examples/index.ts",
         "index.d.ts",
         "index.ts",
         "src/bobrilHelpers.d.ts",
