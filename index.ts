@@ -1,4 +1,4 @@
-export { default as inlineForm } from './src/inlineForm';
+export { default as form } from './src/form';
 export { default as formGroup } from './src/formGroup';
 export { default as input } from './src/input';
 export { default as radio } from './src/radio';
