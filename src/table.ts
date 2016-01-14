@@ -17,8 +17,8 @@ export interface IRow {
 }
 
 export interface IData {
-    isStriped?: boolean;
-    isHover?: boolean
+    isStriped?: boolean
+    enableHovering?: boolean
     headers: IHeader[];
     rows: IRow[];
     footers?: IFooter[][];
@@ -32,7 +32,7 @@ export default b.createComponent<IData>({
     render(ctx: ICtx, me: b.IBobrilNode) {
         me.tag = 'table';
         me.className = 'table';
-        (ctx.data.isHover === undefined || ctx.data.isHover) && (me.className += ' table-hover')
+        (ctx.data.enableHovering === undefined || ctx.data.enableHovering) && (me.className += ' table-hover')
         ctx.data.isStriped && (me.className += ' table-striped');
         me.children = [
             {
