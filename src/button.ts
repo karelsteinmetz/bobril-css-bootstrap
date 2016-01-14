@@ -17,7 +17,7 @@ export default b.createComponent<IData>({
     render(ctx: ICtx, me: b.IBobrilNode) {
         me.tag = 'button';
         me.className = 'btn';
-        me.className += cs.handle(ctx.data.contextualState, 'btn');
+        me.className += cs.handleWithPrefix(ctx.data.contextualState, 'btn');
         ctx.data.isDisabled && (me.className += ' disabled');
         me.children = ctx.data.label;
     },

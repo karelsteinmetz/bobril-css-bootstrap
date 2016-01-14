@@ -1,4 +1,5 @@
 import * as b from 'bobril';
+import * as cs from './contextualState';
 
 export interface IHeader {
     label: b.IBobrilChildren;
@@ -12,8 +13,9 @@ export interface IFooter {
 }
 
 export interface IRow {
-    onSelect?: () => void
     columns: b.IBobrilChildren[]
+    onSelect?: () => void
+    contextualState?: cs.ContextualState
 }
 
 export interface IData {
@@ -44,6 +46,7 @@ export default b.createComponent<IData>({
                 children: ctx.data.rows.map(r => {
                     return {
                         tag: 'tr',
+                        className: r.contextualState && cs.handle(r.contextualState),
                         children: r.columns
                             .map(cc => {
                                 return {

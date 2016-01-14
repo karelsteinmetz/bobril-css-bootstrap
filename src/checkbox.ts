@@ -10,7 +10,7 @@ export interface IInputCtx extends b.IBobrilCtx {
     data: IInputData;
 }
 
-export let createInput = b.createComponent<IInputData>({
+export let createInput = b.createComponent({
     render(ctx: IInputCtx, me: b.IBobrilNode) {
         me.tag = 'input';
         me.attrs = {
@@ -33,7 +33,7 @@ export interface ICtx extends b.IBobrilCtx {
     data: IData;
 }
 
-export default b.createComponent<IData>({
+export default b.createComponent({
     render(ctx: ICtx, me: b.IBobrilNode) {
         me.tag = 'div';
         me.className = 'checkbox';
