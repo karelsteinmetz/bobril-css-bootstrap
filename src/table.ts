@@ -11,11 +11,16 @@ export interface IFooter {
     colSpan?: number;
 }
 
+export interface IRow {
+    onSelect?: () => void
+    columns: b.IBobrilChildren[]
+}
+
 export interface IData {
     isStriped?: boolean;
     isHover?: boolean
     headers: IHeader[];
-    rows: b.IBobrilChildren[][];
+    rows: IRow[];
     footers?: IFooter[][];
 }
 
@@ -36,15 +41,19 @@ export default b.createComponent<IData>({
             },
             {
                 tag: 'tbody',
-                children: ctx.data.rows.map(c => {
+                children: ctx.data.rows.map(r => {
                     return {
                         tag: 'tr',
-                        children: c.map(cc => {
-                            return {
-                                tag: 'td',
-                                children: cc
-                            };
-                        })
+                        children: r.columns
+                            .map(cc => {
+                                return {
+                                    tag: 'td',
+                                    children: cc,
+                                };
+                            }),
+                        component: r.onSelect && {
+                            onDoubleClick: () => { r.onSelect(); return true; }
+                        }
                     };
                 })
             },
