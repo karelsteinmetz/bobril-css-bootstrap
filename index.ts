@@ -5,7 +5,7 @@ export { default as radio } from './src/radio';
 export { default as checkbox, createInput as checkboxInput }from  './src/checkbox';
 export { default as button, group as buttonGroup } from './src/button';
 export { default as container } from './src/container';
-export { default as navBar, IRoute as INavBarRoute } from './src/navBar';
+export { default as navBar, IItem as INavBarItem } from './src/navBar';
 export { default as row } from  './src/layout';
 export { default as table } from './src/table';
 export { date as dateField, time as timeField, dateTime as dateTimeField, input as inputFormField, readOnly as readOnlyField, numeric as numericField } from './src/formField';
