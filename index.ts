@@ -1,6 +1,6 @@
 export { default as form } from './src/form';
 export { default as formGroup } from './src/formGroup';
-export { default as input } from './src/input';
+export { default as input, Type as InputType } from './src/input';
 export { default as radio } from './src/radio';
 export { default as checkbox, createInput as checkboxInput }from  './src/checkbox';
 export { default as button, group as buttonGroup } from './src/button';

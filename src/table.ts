@@ -55,7 +55,7 @@ export default b.createComponent<IData>({
                                 };
                             }),
                         component: r.onSelect && {
-                            onDoubleClick: () => { r.onSelect(); return true; }
+                            onClick: () => { r.onSelect(); return true; }
                         }
                     };
                 })

@@ -10,8 +10,9 @@ export interface IItem {
 }
 
 export interface IData {
-    header: string
+    header: b.IBobrilChildren
     leftItems?: IItem[]
+    centerItems?: b.IBobrilChildren[]
     rightItems?: IItem[]
     activeItem?: string
     isFixedOnTop?: boolean
