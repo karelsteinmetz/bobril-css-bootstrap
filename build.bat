@@ -1,1 +1,2 @@
-node ./node_modules/bobril-build/bin/bb
+call copyResources.bat
+call tsc

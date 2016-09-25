@@ -6,7 +6,10 @@
         "noImplicitAny": false,
         "removeComments": false,
         "moduleResolution": "node",
-        "noLib": false
+        "noLib": false,
+        "module": "commonjs",
+        "jsx": "react",
+        "reactNamespace": "b"
     },
     "filesGlob": [
         "./**/*.ts",
@@ -18,8 +21,11 @@
         "!./tests/**/*"
     ],
     "files": [
+        "examples/index.d.ts",
         "examples/index.ts",
+        "index.d.ts",
         "index.ts",
+        "node_modules/bobril/jsx.d.ts",
         "src/bobrilHelpers.d.ts",
         "src/bobrilHelpers.ts",
         "src/button.d.ts",
@@ -30,6 +36,7 @@
         "src/container.ts",
         "src/contextualState.d.ts",
         "src/contextualState.ts",
+        "src/form.d.ts",
         "src/form.ts",
         "src/formField.d.ts",
         "src/formField.ts",

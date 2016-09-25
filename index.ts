@@ -1,3 +1,7 @@
+import * as b from "bobril";
+
+b.asset("./resources/css/bootstrap.min.css");
+
 export { default as form } from './src/form';
 export { default as formGroup } from './src/formGroup';
 export { default as input, Type as InputType } from './src/input';
