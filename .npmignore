@@ -1,6 +1,5 @@
 .*
 *.bat
-resources
 spec
 tests
 examples
