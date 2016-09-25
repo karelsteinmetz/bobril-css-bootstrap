@@ -1,6 +1,6 @@
 {
     "name": "bobril-css-bootstrap",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "CSS-Bootstrap in Bobril components",
     "main": "./index.js",
     "typescript": {
@@ -26,7 +26,6 @@
         "bobril": "*"
     },
     "devDependencies": {
-        "bobril-build": "*"
     },
     "license": "MIT"
 }
