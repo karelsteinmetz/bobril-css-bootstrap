@@ -55,7 +55,7 @@ export interface IData {
   validatiors?: IValidator[]
 }
 
-export interface ICtx {
+export interface ICtx extends b.IBobrilCtx {
   data: IData
 }
 
