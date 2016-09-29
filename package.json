@@ -1,8 +1,9 @@
 {
   "name": "bobril-css-bootstrap",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "CSS-Bootstrap in Bobril components",
   "main": "./index.js",
+  "types": "index.d.ts",
   "typescript": {
     "main": "./index.ts"
   },
